@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Copur&#39;s blog</title>
+    <link>https://copurxia.github.io/posts/</link>
+    <description>Recent content in Posts on Copur&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 30 Mar 2020 15:02:16 +0800</lastBuildDate>
+    
+	<atom:link href="https://copurxia.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Edgeless暴力封装</title>
+      <link>https://copurxia.github.io/posts/033001/</link>
+      <pubDate>Mon, 30 Mar 2020 15:02:16 +0800</pubDate>
+      
+      <guid>https://copurxia.github.io/posts/033001/</guid>
+      <description>以前的一篇文章 Cno修饰版
+ 您可以不经过Edgeless团队的同意自由更改发布插件作品，但是请不要忘记您的道德操守 我们不希望看到有违反Edgeless三无精神（无劫持、无广告、无收费）或是违反中华人民共和国相关法律条款的作品出现，也不会承认此类作品与我们有任何关系 继续开发视为您已经同意此条款 如果您希望能上架您的插件包，请加入内测交流QQ群进行提交 此章节是“开发插件包”的补充章节，帮助较为复杂插件包的简化开发，要求您已了解Edgeless插件包开发的基本步骤  以微信PC端为例
+ 目前准备的有↓
+   微信安装包
+  VMware workstation
+  Edgeless暴力封装专用虚拟机镜像
+  Procmon 分析工具
+   1.使用VMware导入准备的虚拟机镜像
+2.启动虚拟机
+3.将微信安装程序拖放至虚拟机
+4.运行桌面“Cameyo单文件打包制作v3.1.1530.0汉化增强绿色版”文件夹内的“扫描安装过程并打包.exe”
+5.等待扫描结束
+6.扫描结束后会出现如下窗口↓
+7.此时运行微信安装程序
+8.按照正常方式安装
+9.点击安装已完成并再次耐心等待扫描结束
+10.建立一个Edgeless插件目录
+ wechat.wcs是插件的加载代码，符合插件开发文档
+ exec =!&amp;ldquo;X:\Program Files\Edgeless\Wechat\setup.cmd&amp;rdquo; link &amp;ldquo;X:\Users\Default\Desktop\Wechat&amp;rdquo;,&amp;ldquo;X:\Program Files (x86)\Tencent\WeChat\WeChat.exe&amp;rdquo; file &amp;ldquo;X:\Program Files\Edgeless\Wechat&amp;rdquo;
+   Wechat文件夹内是插件的内容包
+  setup.cmd的任务是进行安装过程的模仿
+ copy *.dll X:\Windows\SysWOW64*.dll copy *.dll X:\Windows\system32*.dll regedit /s &amp;ldquo;X:\Program Files\Edgeless\Wechat\reg.</description>
+    </item>
+    
+    <item>
+      <title>Hello</title>
+      <link>https://copurxia.github.io/posts/hello/</link>
+      <pubDate>Mon, 30 Mar 2020 12:05:57 +0800</pubDate>
+      
+      <guid>https://copurxia.github.io/posts/hello/</guid>
+      <description>总算重建成功了</description>
+    </item>
+    
+  </channel>
+</rss>
