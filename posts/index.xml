@@ -6,10 +6,28 @@
     <description>Recent content in Posts on Copur&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 30 Mar 2020 15:02:16 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2020 11:46:58 +0800</lastBuildDate>
     
 	<atom:link href="https://copurxia.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>颜色搭配</title>
+      <link>https://copurxia.github.io/posts/033101/</link>
+      <pubDate>Tue, 31 Mar 2020 11:46:58 +0800</pubDate>
+      
+      <guid>https://copurxia.github.io/posts/033101/</guid>
+      <description>emm，写了这么久的程序，偶尔也得停下来整理下自己在ui设计上的心得。
+首先是经常用的的网站
+  Ant Design
+​	可以说，正式开始系统地接触ui设计便是在接触antdesign之后吧，虽然之前也有研究过Google的material design和微软的fluent design，可奈何md在电脑上总是很别扭，而微软的的fluent design在没有官方sdk的情况下实现难度又极高，况且我没有相应的编程基础，因此总是在ui设计上相当难受。
+​	而遇到了ant design后一些长期在ui设计上的问题便也迎刃而解，antdesign吸引我的无非一下几点
+  色彩搭配上的研究
+​	这点md倒是也有，但md的色彩是一种固定色板，而非像ant design那样详细的介绍色板是如何来的甚至色彩的生成算法都有所介绍，毕竟，不是只要色板调的好，什么颜色都可以随便上的，而antdesign很相近的解释了色彩的搭配以及每种色彩的使用情景。
+  知乎专栏上各种介绍的文章
+​	或许因为是本土设计体系的原因，antdesign设计团队给人的感觉似乎跟亲近一先，相较之下，md和fd那种丢下厚厚的文档就跑的有时真心让我这种没什么基础的人头大
+    </description>
+    </item>
     
     <item>
       <title>Edgeless暴力封装</title>
