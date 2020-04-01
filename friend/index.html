@@ -97,12 +97,17 @@
                 </div>
             </article>
             <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+            <span id="<Your/Path/Name>" class="leancloud_visitors" data-flag-title="Your Article Title">
+                <em class="post-meta-item-text">阅读量 </em>
+                <i class="leancloud-visitors-count">1000000</i>
+            </span>
             <div style="background-color: rgba(255, 255, 255, 0.8);" id="vcomments"></div>
             <script>
                 new Valine({
                     el: '#vcomments',
                     appId: 'baCzGUMCExhf1fkeehz9Wdol-9Nh9j0Va',
-                    appKey: '1cwxV9IYAXNwJbqSq3GU8jB1'
+                    appKey: '1cwxV9IYAXNwJbqSq3GU8jB1',
+                    visitor: true
                 })
             </script>
         </div>
