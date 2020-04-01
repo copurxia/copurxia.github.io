@@ -142,7 +142,10 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <h2 class="mb-3">Edgeless暴力封装</h2>
-
+                        <span id="<Your/Path/Name>" class="leancloud_visitors" data-flag-title="Your Article Title">
+                            <em class="post-meta-item-text">阅读量 </em>
+                            <i class="leancloud-visitors-count">1000000</i>
+                        </span>
                         <div class="content">
                             <p>以前的一篇文章 <a href="https://www.kancloud.cn/cnotech/edgeless/1499994">Cno修饰版</a></p>
 <hr>
@@ -269,6 +272,15 @@ regedit /s &ldquo;X:\Program Files\Edgeless\Wechat\reg.reg&rdquo;</p>
                     </div>
                 </div>
             </article>
+            <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+            <div id="vcomments"></div>
+            <script>
+                new Valine({
+                    el: '#vcomments',
+                    appId: 'baCzGUMCExhf1fkeehz9Wdol-9Nh9j0Va',
+                    appKey: '1cwxV9IYAXNwJbqSq3GU8jB1'
+                })
+            </script>
         </div>
     </div>
 </main>
