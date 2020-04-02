@@ -12,6 +12,7 @@
 </title><meta name="author"
   content="">
 <link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+<link href='https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io/static/pio.css' rel='stylesheet' type='text/css'/>
 
 
 
@@ -165,7 +166,11 @@
 </main>
 
 
-    <footer class="footer text-center bg-dark py-6  animated slideUp">
+    <div class="pio-container left">
+    <div class="pio-action"></div>
+    <canvas id="pio" width="300" height="300"></canvas>
+</div>
+<footer class="footer text-center bg-dark py-6  animated slideUp">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -188,11 +193,11 @@
 </footer>
 
     
-    
-        
-            <script src="/dist/main.2ed44664366c9940537d.min.js"></script>
-        
-    
+
+
+<script src="/dist/main.2ed44664366c9940537d.min.js"></script>
+
+
 
 
 
@@ -202,11 +207,67 @@
 </script>
 <script src="https://cdn.bootcss.com/prism/1.17.1/components/prism-core.min.js"></script>
 <script src="https://cdn.bootcss.com/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
-<script src="https://cdn.bootcss.com/canvas-nest.js/2.0.4/canvas-nest.js"  zIndex="-2"  opacity='0.5' color="#36cfc9"></script>
 
 
-
-
+<script src="https://cdn.bootcss.com/canvas-nest.js/2.0.4/canvas-nest.js" zIndex="-2" opacity='0.5'
+    color="#36cfc9"></script>
+<script src='https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io/static/l2d.js'></script>
+<script src='https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io/static/pio.js'></script>
+<script>
+    var pio = new Paul_Pio({
+        "mode": "fixed",
+        "hidden": true,
+        "content": {
+            "welcome": ["欢迎来到Copur的自留地！", "今天天气不错，一起来玩吧！", "博主每天都有些折腾记录，欢迎前往他的小窝阅读~"],
+            "custom": [
+                { "selector": ".comment-form", "text": "欢迎参与本文评论，别发小广告噢~" },
+                { "selector": ".home-social a:last-child", "text": "在这里可以了解博主的日常噢~" },
+                { "selector": ".post-item a", "type": "read" },
+                { "selector": ".post-content a, .page-content a", "type": "link" }
+            ]
+        },
+        "night": "single.night()",
+        "model": ["https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/pio/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/index/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/22closet.2016.xmas/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/22closet.2017.cba-normal/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/22closet.2017.cba-super/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/22closet.2017.newyear/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/22closet.2017.school/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/22closet.2017.summer.normal/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/22closet.2017.valley/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/22closet.2017.vdays/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/22closet.2018.bls-summer/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/22closet.2018.bls-winter/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/22closet.2018.lover/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/22closet.2018.spring/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/22closet.2019.bls/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/22closet.2019.deluxe/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/22closet.2019.summer/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/22closet.2020.newyear/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/22closet.default.v2/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/33closet.2016.xmas/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/33closet.2017.cba-normal/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/33closet.2017.cba-super/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/33closet.2017.school/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/33closet.2017.summer.normal/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/33closet.2017.summer.super/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/33closet.2017.tomo-bukatsu.low/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/33closet.2017.valley/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/33closet.2017.vdays/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/33closet.2018.bls-summer/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/33closet.2018.bls-winter/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/33closet.2018.lover/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/33closet.2018.playwater/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/33closet.2018.spring/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/33closet.2019.bls/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/33closet.2019.deluxe/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/33closet.2019.summer/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/33closet.2020.newyear/model.json",
+                  "https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io@master/models/33closet.default.v2/model.json"
+                ]
+    });
+</script>
 
 
     
