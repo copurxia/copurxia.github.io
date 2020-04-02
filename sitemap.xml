@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://copurxia.github.io/</loc>
+    <lastmod>2020-04-02T16:22:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://copurxia.github.io/dili/</loc>
+    <lastmod>2020-04-02T16:22:22+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://copurxia.github.io/post/</loc>
     <lastmod>2020-04-01T18:49:30+08:00</lastmod>
   </url>
@@ -20,11 +30,6 @@
   <url>
     <loc>https://copurxia.github.io/post/033001/</loc>
     <lastmod>2020-03-30T15:02:16+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://copurxia.github.io/</loc>
-    <lastmod>2020-03-30T12:07:17+08:00</lastmod>
   </url>
   
   <url>
