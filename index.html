@@ -10,7 +10,30 @@
   
   Copur&#39;s blog
   
-</title><meta name="author"
+</title>
+<style>
+  .typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+  }
+  @keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+  }
+  @-webkit-keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+  }
+  @-moz-keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+  }
+</style><meta name="author"
   content="">
 <link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" rel="stylesheet">
 <link href='https://cdn.jsdelivr.net/gh/copurxia/copurxia.github.io/static/pio.css' rel='stylesheet' type='text/css'/>
@@ -73,10 +96,11 @@
 <main class="homepage container py-6 animated slideInRight">
     
     <div class="hero row">
-        <div class="col position-relative py-lg-7 py-7"><h1 class="display-4">Copur&#39;s blog</h1><br /><p id="hitokoto">:D 获取中...</p></div>
+        <div class="col position-relative py-lg-7 py-7"><h1 class="display-4">Copur&#39;s blog</h1><br /><div style="display: flex;"><p class="hitokoto"></p></div></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+<script src="https://cdn.bootcss.com/typed.js/2.0.5/typed.js"></script>
 
 <script>
   fetch('https://v1.hitokoto.cn/?c=d')
@@ -84,8 +108,13 @@
       return res.json();
     })
     .then(function (data) {
-      var hitokoto = document.getElementById('hitokoto');
-      hitokoto.innerText = data.hitokoto + '——【' + data.from + '】';
+      
+      
+      var typed = new Typed('.hitokoto', {
+        strings: [data.from + '中曾写道', data.hitokoto,data.hitokoto + '——《' + data.from + '》'], 
+        typeSpeed: 100,
+        backSpeed: 50
+      });
     })
     .catch(function (err) {
       console.error(err);
